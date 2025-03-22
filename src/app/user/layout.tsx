@@ -38,6 +38,12 @@ import { twMerge } from "tailwind-merge";
 import { Geist, Geist_Mono } from "next/font/google";
 import type { Metadata } from "next";
 
+import { clsx, type ClassValue } from "clsx"
+function cn(...inputs: any[]) {
+  return twMerge(clsx(inputs));
+}
+
+
 
 import React, { useState } from "react";
 import {
@@ -49,7 +55,6 @@ import {
 import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { cn } from "@/app/lib/utils";
 import { Sidebar, SidebarBody, SidebarLink } from "../../../components/ui/sidebar";
 
 const geistSans = Geist({
