@@ -34,6 +34,7 @@
 
 
 "use client";
+import { twMerge } from "tailwind-merge";
 import { Geist, Geist_Mono } from "next/font/google";
 import type { Metadata } from "next";
 
@@ -48,7 +49,7 @@ import {
 import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 import { Sidebar, SidebarBody, SidebarLink } from "../../../components/ui/sidebar";
 
 const geistSans = Geist({

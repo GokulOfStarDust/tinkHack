@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 import { Sidebar, SidebarBody, SidebarLink } from "../../../components/ui/sidebar";
 
 export default function SidebarDemo( {children}:any) {
